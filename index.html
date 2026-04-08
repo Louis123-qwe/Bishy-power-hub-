@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="favicon.png">
+
+<title>Bishy Power Hub – Solar Energy & Electrical Solutions</title>
+<meta name="title" content="Bishy Power Hub – Sustainable Energy & Electrical Solutions">
+<meta name="description" content="Expert solar panel installations, inverter systems, and premium electrical appliances in Nigeria. Reliable power solutions for homes and businesses.">
+<meta name="keywords" content="Solar energy Nigeria, Inverter installation Lagos, Solar Panels, CCTV installation, Electrical appliances, Bishy Power Hub, Renewable energy, Power solutions Abuja">
+<meta name="author" content="Bishy Power Hub">
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="website">
+
+<meta property="og:title" content="Bishy Power Hub – Powering Your Future">
+<meta property="og:description" content="Premium solar systems and electrical services. Professional installation and maintenance across Nigeria.">
+
+<meta property="twitter:card" content="summary">
+
+
+<meta property="twitter:title" content="Bishy Power Hub – Solar & Electrical Experts">
+<meta property="twitter:description" content="Expert solar and electrical solutions for Nigerian homes and businesses.">
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #060b14;
+    --bg2: #0a1220;
+    --bg3: #0f1a2e;
+    --surface: rgba(255,255,255,0.04);
+    --surface2: rgba(255,255,255,0.07);
+    --border: rgba(0,200,255,0.15);
+    --blue: #00c8ff;
+    --green: #00ff88;
+    --glow-blue: 0 0 20px rgba(0,200,255,0.4);
+    --glow-green: 0 0 20px rgba(0,255,136,0.4);
+    --text: #e8f4ff;
+    --muted: #7a9ab5;
+    --danger: #ff4d6d;
+    --radius: 16px;
+    --transition: 0.3s cubic-bezier(0.4,0,0.2,1);
+  }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'DM Sans',sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    overflow-x:hidden;
+    line-height:1.6;
+  }
+  /* Scrollbar */
+  ::-webkit-scrollbar{width:6px}
+  ::-webkit-scrollbar-track{background:var(--bg2)}
+  ::-webkit-scrollbar-thumb{background:var(--blue);border-radius:3px}
+
+  /* ── NAV ── */
+  nav{
+    position:fixed;top:0;left:0;right:0;z-index:100;
+    display:flex;align-items:center;justify-content:space-between;
+    padding:1rem 2rem;
+    background:rgba(6,11,20,0.85);
+    backdrop-filter:blur(20px);
+    border-bottom:1px solid var(--border);
+    transition:var(--transition);
+  }
+  .nav-logo{
+    font-family:'Orbitron',sans-serif;
+    font-size:1.2rem;font-weight:900;
+    background:linear-gradient(90deg,var(--blue),var(--green));
+    -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+    letter-spacing:1px;
+  }
+  .nav-links{display:flex;gap:2rem;list-style:none}
+  .nav-links a{color:var(--muted);text-decoration:none;font-size:0.9rem;transition:color .2s}
+  .nav-links a:hover{color:var(--blue)}
+  .nav-actions{display:flex;align-items:center;gap:1rem}
+  .cart-btn{
+    position:relative;background:var(--surface2);border:1px solid var(--border);
+    color:var(--text);padding:.5rem 1rem;border-radius:8px;cursor:pointer;
+    font-family:'DM Sans',sans-serif;font-size:.9rem;transition:var(--transition);
+    display:flex;align-items:center;gap:.5rem;
+  }
+  .cart-btn:hover{border-color:var(--blue);box-shadow:var(--glow-blue)}
+  .cart-count{
+    background:var(--blue);color:#000;border-radius:50%;
+    width:18px;height:18px;font-size:.7rem;font-weight:700;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .hamburger{display:none;flex-direction:column;gap:4px;cursor:pointer;padding:4px}
+  .hamburger span{width:22px;height:2px;background:var(--text);border-radius:2px;transition:var(--transition)}
+
+  /* ── HERO ── */
+  #hero{
+    min-height:100vh;display:flex;align-items:center;justify-content:center;
+    position:relative;overflow:hidden;padding:6rem 2rem 4rem;
+    text-align:center;
+  }
+  .hero-bg{
+    position:absolute;inset:0;
+    background:radial-gradient(ellipse 80% 60% at 50% 30%, rgba(0,200,255,0.08) 0%, transparent 70%),
+               radial-gradient(ellipse 50% 40% at 20% 80%, rgba(0,255,136,0.06) 0%, transparent 60%),
+               radial-gradient(ellipse 40% 50% at 80% 70%, rgba(0,200,255,0.05) 0%, transparent 60%);
+  }
+  .grid-lines{
+    position:absolute;inset:0;
+    background-image:
+      linear-gradient(rgba(0,200,255,0.04) 1px,transparent 1px),
+      linear-gradient(90deg,rgba(0,200,255,0.04) 1px,transparent 1px);
+    background-size:60px 60px;
+    mask-image:radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 100%);
+  }
+  .hero-content{position:relative;z-index:1;max-width:780px}
+  .hero-badge{
+    display:inline-flex;align-items:center;gap:.5rem;
+    background:rgba(0,200,255,0.1);border:1px solid rgba(0,200,255,0.3);
+    padding:.4rem 1rem;border-radius:50px;font-size:.8rem;color:var(--blue);
+    margin-bottom:1.5rem;animation:fadeUp .6s ease both;
+  }
+  .hero-badge::before{content:'⚡';font-size:1rem}
+  h1{
+    font-family:'Orbitron',sans-serif;
+    font-size:clamp(2.2rem,6vw,4.5rem);font-weight:900;
+    line-height:1.1;margin-bottom:1.2rem;
+    animation:fadeUp .7s .1s ease both;
+  }
+  h1 span{
+    background:linear-gradient(90deg,var(--blue),var(--green));
+    -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  }
+  .hero-sub{
+    font-size:1.15rem;color:var(--muted);max-width:540px;margin:0 auto 2.5rem;
+    animation:fadeUp .7s .2s ease both;
+  }
+  .hero-ctas{
+    display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;
+    animation:fadeUp .7s .3s ease both;
+  }
+  .btn-primary{
+    background:linear-gradient(135deg,var(--blue),#0099cc);
+    color:#000;font-weight:700;padding:.85rem 2rem;border-radius:10px;
+    border:none;cursor:pointer;font-family:'DM Sans',sans-serif;font-size:.95rem;
+    transition:var(--transition);box-shadow:0 4px 20px rgba(0,200,255,0.3);
+    text-decoration:none;display:inline-flex;align-items:center;gap:.5rem;
+  }
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(0,200,255,0.5)}
+  .btn-secondary{
+    background:transparent;color:var(--text);padding:.85rem 2rem;border-radius:10px;
+    border:1px solid var(--border);cursor:pointer;font-family:'DM Sans',sans-serif;
+    font-size:.95rem;transition:var(--transition);text-decoration:none;
+    display:inline-flex;align-items:center;gap:.5rem;
+  }
+  .btn-secondary:hover{border-color:var(--green);color:var(--green);box-shadow:var(--glow-green)}
+  .hero-stats{
+    display:flex;gap:3rem;justify-content:center;margin-top:4rem;flex-wrap:wrap;
+    animation:fadeUp .7s .4s ease both;
+  }
+  .stat{text-align:center}
+  .stat-num{
+    font-family:'Orbitron',sans-serif;font-size:1.8rem;font-weight:700;
+    background:linear-gradient(90deg,var(--blue),var(--green));
+    -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  }
+  .stat-label{font-size:.8rem;color:var(--muted);margin-top:.2rem}
+
+  /* ── SECTIONS ── */
+  section{padding:5rem 2rem}
+  .section-label{
+    font-size:.75rem;font-weight:600;letter-spacing:3px;text-transform:uppercase;
+    color:var(--blue);margin-bottom:.75rem;
+  }
+  .section-title{
+    font-family:'Orbitron',sans-serif;font-size:clamp(1.6rem,3vw,2.5rem);
+    font-weight:700;margin-bottom:1rem;
+  }
+  .section-sub{color:var(--muted);max-width:500px;margin-bottom:3rem}
+  .container{max-width:1200px;margin:0 auto}
+
+  /* ── CATEGORIES ── */
+  #categories{background:var(--bg2)}
+  .categories-grid{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.5rem;
+  }
+  .cat-card{
+    background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+    padding:2rem;cursor:pointer;transition:var(--transition);position:relative;overflow:hidden;
+  }
+  .cat-card::before{
+    content:'';position:absolute;inset:0;
+    background:linear-gradient(135deg,rgba(0,200,255,0.05),transparent);
+    opacity:0;transition:opacity .3s;
+  }
+  .cat-card:hover{transform:translateY(-4px);border-color:var(--blue);box-shadow:var(--glow-blue)}
+  .cat-card:hover::before{opacity:1}
+  .cat-icon{font-size:2.5rem;margin-bottom:1rem}
+  .cat-card h3{font-family:'Orbitron',sans-serif;font-size:1rem;margin-bottom:.5rem}
+  .cat-card p{font-size:.85rem;color:var(--muted)}
+  .cat-card.active{border-color:var(--green);background:rgba(0,255,136,0.05)}
+
+  /* ── PRODUCTS ── */
+  #products{background:var(--bg)}
+  .filter-bar{
+    display:flex;gap:.75rem;flex-wrap:wrap;margin-bottom:2.5rem;align-items:center;
+  }
+  .filter-btn{
+    background:var(--surface);border:1px solid var(--border);color:var(--muted);
+    padding:.4rem 1.1rem;border-radius:50px;cursor:pointer;font-size:.85rem;
+    transition:var(--transition);font-family:'DM Sans',sans-serif;
+  }
+  .filter-btn.active,.filter-btn:hover{
+    border-color:var(--blue);color:var(--blue);background:rgba(0,200,255,0.08);
+  }
+  .products-grid{
+    display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.5rem;
+  }
+  .product-card{
+    background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+    overflow:hidden;transition:var(--transition);position:relative;
+  }
+  .product-card:hover{transform:translateY(-4px);box-shadow:0 10px 40px rgba(0,0,0,0.4),var(--glow-blue);border-color:rgba(0,200,255,0.3)}
+  .product-img{
+    width:100%;height:200px;object-fit:cover;display:block;
+    background:var(--bg3);
+  }
+  .product-img-placeholder{
+    width:100%;height:200px;background:linear-gradient(135deg,var(--bg3),var(--bg2));
+    display:flex;align-items:center;justify-content:center;font-size:3rem;
+  }
+  .product-badge{
+    position:absolute;top:1rem;right:1rem;
+    background:rgba(0,255,136,0.15);border:1px solid rgba(0,255,136,0.3);
+    color:var(--green);font-size:.7rem;font-weight:600;padding:.2rem .6rem;border-radius:50px;
+  }
+  .out-badge{background:rgba(255,77,109,0.15);border-color:rgba(255,77,109,0.3);color:var(--danger)}
+  .product-body{padding:1.25rem}
+  .product-cat{font-size:.72rem;color:var(--blue);font-weight:600;letter-spacing:1px;text-transform:uppercase;margin-bottom:.3rem}
+  .product-name{font-weight:600;font-size:1rem;margin-bottom:.4rem}
+  .product-desc{font-size:.82rem;color:var(--muted);margin-bottom:1rem;line-height:1.5}
+  .product-price{
+    font-family:'Orbitron',sans-serif;font-size:1.2rem;font-weight:700;
+    color:var(--green);margin-bottom:1rem;
+  }
+  .product-actions{display:flex;gap:.5rem;flex-wrap:wrap}
+  .add-cart-btn{
+    flex:1;background:linear-gradient(135deg,var(--blue),#0099cc);color:#000;
+    border:none;padding:.65rem;border-radius:8px;cursor:pointer;font-weight:700;
+    font-size:.85rem;transition:var(--transition);font-family:'DM Sans',sans-serif;
+  }
+  .add-cart-btn:hover{box-shadow:0 4px 15px rgba(0,200,255,0.4)}
+  .add-cart-btn:disabled{background:#333;color:#666;cursor:not-allowed}
+  .install-toggle{
+    background:var(--surface2);border:1px solid var(--border);color:var(--muted);
+    padding:.65rem .8rem;border-radius:8px;cursor:pointer;font-size:.8rem;
+    transition:var(--transition);white-space:nowrap;font-family:'DM Sans',sans-serif;
+  }
+  .install-toggle.active{border-color:var(--green);color:var(--green);background:rgba(0,255,136,0.08)}
+
+  /* ── CART DRAWER ── */
+  .cart-overlay{
+    position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:200;
+    opacity:0;pointer-events:none;transition:opacity .3s;backdrop-filter:blur(4px);
+  }
+  .cart-overlay.open{opacity:1;pointer-events:all}
+  .cart-drawer{
+    position:fixed;top:0;right:0;bottom:0;width:min(420px,100vw);
+    background:var(--bg2);border-left:1px solid var(--border);z-index:201;
+    display:flex;flex-direction:column;
+    transform:translateX(100%);transition:transform .35s cubic-bezier(0.4,0,0.2,1);
+  }
+  .cart-overlay.open .cart-drawer{transform:translateX(0)}
+  .cart-header{
+    padding:1.5rem;border-bottom:1px solid var(--border);
+    display:flex;align-items:center;justify-content:space-between;
+  }
+  .cart-header h2{font-family:'Orbitron',sans-serif;font-size:1.1rem}
+  .close-btn{background:none;border:none;color:var(--muted);cursor:pointer;font-size:1.5rem;transition:color .2s}
+  .close-btn:hover{color:var(--text)}
+  .cart-items{flex:1;overflow-y:auto;padding:1rem}
+  .cart-item{
+    display:flex;gap:1rem;padding:1rem;background:var(--surface);
+    border:1px solid var(--border);border-radius:10px;margin-bottom:.75rem;
+    align-items:flex-start;
+  }
+  .cart-item-img{
+    width:60px;height:60px;border-radius:8px;object-fit:cover;
+    background:var(--bg3);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:1.5rem;
+  }
+  .cart-item-info{flex:1}
+  .cart-item-name{font-size:.9rem;font-weight:600;margin-bottom:.2rem}
+  .cart-item-price{font-size:.85rem;color:var(--green);font-family:'Orbitron',sans-serif}
+  .cart-item-install{font-size:.72rem;color:var(--blue);margin-top:.2rem}
+  .qty-controls{display:flex;align-items:center;gap:.5rem;margin-top:.5rem}
+  .qty-btn{
+    background:var(--surface2);border:1px solid var(--border);color:var(--text);
+    width:26px;height:26px;border-radius:6px;cursor:pointer;font-size:1rem;
+    display:flex;align-items:center;justify-content:center;transition:var(--transition);
+  }
+  .qty-btn:hover{border-color:var(--blue);color:var(--blue)}
+  .qty-num{font-size:.9rem;min-width:24px;text-align:center}
+  .remove-item{background:none;border:none;color:var(--danger);cursor:pointer;font-size:.75rem;margin-left:auto;align-self:flex-start;padding:.2rem}
+  .cart-footer{padding:1.5rem;border-top:1px solid var(--border)}
+  .cart-total{display:flex;justify-content:space-between;margin-bottom:1.2rem;font-size:1.1rem}
+  .cart-total strong{font-family:'Orbitron',sans-serif;color:var(--green)}
+  .empty-cart{text-align:center;padding:3rem 1rem;color:var(--muted)}
+  .empty-cart span{font-size:3rem;display:block;margin-bottom:1rem}
+
+  /* ── CHECKOUT MODAL ── */
+  .modal-overlay{
+    position:fixed;inset:0;background:rgba(0,0,0,0.7);z-index:300;
+    display:flex;align-items:center;justify-content:center;padding:1rem;
+    opacity:0;pointer-events:none;transition:opacity .3s;backdrop-filter:blur(8px);
+  }
+  .modal-overlay.open{opacity:1;pointer-events:all}
+  .modal{
+    background:var(--bg2);border:1px solid var(--border);border-radius:20px;
+    width:100%;max-width:520px;max-height:90vh;overflow-y:auto;
+    transform:scale(.95);transition:transform .3s;
+  }
+  .modal-overlay.open .modal{transform:scale(1)}
+  .modal-header{
+    padding:1.5rem;border-bottom:1px solid var(--border);
+    display:flex;align-items:center;justify-content:space-between;
+    position:sticky;top:0;background:var(--bg2);z-index:1;
+  }
+  .modal-header h2{font-family:'Orbitron',sans-serif;font-size:1.1rem}
+  .modal-body{padding:1.5rem}
+  .form-group{margin-bottom:1.2rem}
+  .form-group label{display:block;font-size:.85rem;color:var(--muted);margin-bottom:.4rem;font-weight:500}
+  .form-group input,.form-group select,.form-group textarea{
+    width:100%;background:var(--surface);border:1px solid var(--border);
+    color:var(--text);padding:.75rem 1rem;border-radius:10px;font-family:'DM Sans',sans-serif;
+    font-size:.9rem;outline:none;transition:border-color .2s;
+  }
+  .form-group input:focus,.form-group select:focus,.form-group textarea:focus{
+    border-color:var(--blue);
+  }
+  .form-group select option{background:var(--bg2)}
+  .form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+  .checkout-summary{
+    background:var(--surface);border:1px solid var(--border);border-radius:10px;
+    padding:1rem;margin-bottom:1.5rem;
+  }
+  .checkout-summary h4{font-size:.85rem;color:var(--muted);margin-bottom:.75rem}
+  .summary-item{display:flex;justify-content:space-between;font-size:.85rem;margin-bottom:.3rem}
+  .summary-total{
+    display:flex;justify-content:space-between;padding-top:.75rem;
+    border-top:1px solid var(--border);margin-top:.75rem;font-weight:700;
+  }
+  .summary-total span:last-child{color:var(--green);font-family:'Orbitron',sans-serif}
+
+  /* ── SUCCESS MODAL ── */
+  .success-modal{text-align:center;padding:2.5rem}
+  .success-icon{font-size:4rem;margin-bottom:1rem}
+  .success-modal h2{font-family:'Orbitron',sans-serif;font-size:1.5rem;margin-bottom:.75rem;color:var(--green)}
+  .order-id-box{
+    background:var(--surface);border:1px solid var(--border);border-radius:10px;
+    padding:1rem;margin:1.5rem 0;font-family:'Orbitron',sans-serif;
+    font-size:.9rem;color:var(--blue);
+  }
+
+  /* ── CONTACT ── */
+  #contact{background:var(--bg3)}
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start}
+  .contact-info{display:flex;flex-direction:column;gap:1.5rem}
+  .contact-item{
+    display:flex;gap:1rem;align-items:flex-start;
+    background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:1.2rem;
+  }
+  .contact-icon{font-size:1.5rem;flex-shrink:0}
+  .contact-label{font-size:.8rem;color:var(--muted);margin-bottom:.2rem}
+  .contact-val{font-weight:600}
+  .contact-val a{color:var(--blue);text-decoration:none}
+  .contact-val a:hover{text-decoration:underline}
+  .book-form{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:2rem}
+  .book-form h3{font-family:'Orbitron',sans-serif;font-size:1.1rem;margin-bottom:1.5rem;color:var(--blue)}
+
+  /* ── FOOTER ── */
+  footer{
+    background:var(--bg);border-top:1px solid var(--border);
+    padding:3rem 2rem;text-align:center;
+  }
+  .footer-logo{
+    font-family:'Orbitron',sans-serif;font-size:1.3rem;font-weight:900;
+    background:linear-gradient(90deg,var(--blue),var(--green));
+    -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+    margin-bottom:.5rem;
+  }
+  .footer-sub{color:var(--muted);font-size:.85rem;margin-bottom:1.5rem}
+  .footer-links{display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap}
+  .footer-links a{color:var(--muted);text-decoration:none;font-size:.85rem;transition:color .2s}
+  .footer-links a:hover{color:var(--blue)}
+
+  /* ── TOAST ── */
+  .toast-container{position:fixed;bottom:2rem;left:50%;transform:translateX(-50%);z-index:500;display:flex;flex-direction:column;gap:.5rem;align-items:center;pointer-events:none}
+  .toast{
+    background:var(--bg2);border:1px solid var(--border);border-radius:10px;
+    padding:.7rem 1.3rem;font-size:.85rem;display:flex;align-items:center;gap:.5rem;
+    animation:toastIn .3s ease;white-space:nowrap;pointer-events:all;
+    box-shadow:0 4px 20px rgba(0,0,0,0.5);
+  }
+  .toast.success{border-color:rgba(0,255,136,0.4);color:var(--green)}
+  .toast.error{border-color:rgba(255,77,109,0.4);color:var(--danger)}
+
+  /* ── ANIMATIONS ── */
+  @keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+  @keyframes toastIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+  .fade-in{animation:fadeUp .5s ease both}
+
+  /* ── LOADING ── */
+  .skeleton{
+    background:linear-gradient(90deg,var(--surface) 25%,var(--surface2) 50%,var(--surface) 75%);
+    background-size:200% 100%;animation:shimmer 1.5s infinite;border-radius:8px;
+  }
+  @keyframes shimmer{0%{background-position:200% 0}100%{background-position:-200% 0}}
+
+  /* ── RESPONSIVE ── */
+  @media(max-width:768px){
+    nav{padding:.8rem 1rem}
+    .nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:var(--bg2);border-bottom:1px solid var(--border);flex-direction:column;padding:1rem;gap:1rem}
+    .nav-links.open{display:flex}
+    .hamburger{display:flex}
+    .contact-grid{grid-template-columns:1fr}
+    .form-row{grid-template-columns:1fr}
+    .hero-stats{gap:2rem}
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-logo">⚡ Bishy Power Hub</div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#categories">Categories</a></li>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#contact">Contact</a></li>
+    
+  </ul>
+  <div class="nav-actions">
+    <button class="cart-btn" onclick="openCart()">
+      🛒 Cart <span class="cart-count" id="cartCount">0</span>
+    </button>
+    <div class="hamburger" onclick="toggleMenu()" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="grid-lines"></div>
+  <div class="hero-content">
+    <div class="hero-badge">Nigeria's #1 Power Solution Provider</div>
+    <h1>Reliable Power Solutions<br>for <span>Homes & Businesses</span></h1>
+    <p class="hero-sub">From solar installations to security systems — we power your world with quality appliances and expert installation.</p>
+    <div class="hero-ctas">
+      <a href="#products" class="btn-primary">⚡ Shop Now</a>
+      <a href="#contact" class="btn-secondary">🔧 Request Installation</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><div class="stat-num">500+</div><div class="stat-label">Products Sold</div></div>
+      <div class="stat"><div class="stat-num">200+</div><div class="stat-label">Installations Done</div></div>
+      <div class="stat"><div class="stat-num">98%</div><div class="stat-label">Customer Satisfaction</div></div>
+      <div class="stat"><div class="stat-num">5yr</div><div class="stat-label">In Business</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+<section id="categories">
+  <div class="container">
+    <div class="section-label">Browse By Category</div>
+    <h2 class="section-title">What Are You Looking For?</h2>
+    <div class="categories-grid" id="categoriesGrid">
+      <div class="cat-card" data-cat="electrical" onclick="filterByCategory('electrical',this)">
+        <div class="cat-icon">🔌</div>
+        <h3>Electrical Appliances</h3>
+        <p>Air conditioners, fans, refrigerators, generators & more</p>
+      </div>
+      <div class="cat-card" data-cat="solar" onclick="filterByCategory('solar',this)">
+        <div class="cat-icon">☀️</div>
+        <h3>Solar Systems</h3>
+        <p>Panels, inverters, batteries & complete solar setups</p>
+      </div>
+      <div class="cat-card" data-cat="accessories" onclick="filterByCategory('accessories',this)">
+        <div class="cat-icon">🔧</div>
+        <h3>Accessories</h3>
+        <p>Cables, connectors, meters, switches & wiring</p>
+      </div>
+      <div class="cat-card" data-cat="security" onclick="filterByCategory('security',this)">
+        <div class="cat-icon">📷</div>
+        <h3>CCTV & Security</h3>
+        <p>IP cameras, DVRs, NVRs & full security packages</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products">
+  <div class="container">
+    <div class="section-label">Our Catalogue</div>
+    <h2 class="section-title">Featured Products</h2>
+    <div class="filter-bar">
+      <button class="filter-btn active" onclick="filterProducts('all',this)">All</button>
+      <button class="filter-btn" onclick="filterProducts('electrical',this)">Electrical</button>
+      <button class="filter-btn" onclick="filterProducts('solar',this)">Solar</button>
+      <button class="filter-btn" onclick="filterProducts('accessories',this)">Accessories</button>
+      <button class="filter-btn" onclick="filterProducts('security',this)">Security</button>
+    </div>
+    <div class="products-grid" id="productsGrid">
+      <!-- Injected by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="section-label">Get In Touch</div>
+    <h2 class="section-title">Contact & Installation</h2>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-icon">📞</div>
+          <div>
+            <div class="contact-label">Phone</div>
+            <div class="contact-val"><a href="tel:+2347082334741">+2347082334741</a></div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">💬</div>
+          <div>
+            <div class="contact-label">WhatsApp</div>
+            <div class="contact-val"><a href="https://wa.me/2347082334741" target="_blank">Chat on WhatsApp</a></div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div>
+            <div class="contact-label">Location</div>
+            <div class="contact-val">Delta State, Nigeria — Nationwide Delivery</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">🕐</div>
+          <div>
+            <div class="contact-label">Business Hours</div>
+            <div class="contact-val">Mon–Sat: 8AM – 6PM</div>
+          </div>
+        </div>
+      </div>
+      <div class="book-form">
+        <h3>📅 Book Installation</h3>
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" id="bookName" placeholder="Your name">
+        </div>
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input type="tel" id="bookPhone" placeholder="+234...">
+        </div>
+        <div class="form-group">
+          <label>Service Type</label>
+          <select id="bookService">
+            <option value="">Select service</option>
+            <option>Solar System Installation</option>
+            <option>Air Conditioner Installation</option>
+            <option>CCTV Setup</option>
+            <option>Electrical Wiring</option>
+            <option>Generator Installation</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Address / Details</label>
+          <textarea id="bookAddr" rows="3" placeholder="Your address and any additional details..."></textarea>
+        </div>
+        <button class="btn-primary" style="width:100%" onclick="submitBooking()">🔧 Book Installation</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">⚡ Bishy Power Hub</div>
+  <div class="footer-sub">Reliable Power Solutions for Homes & Businesses</div>
+  <div class="footer-links">
+    <a href="#hero">Home</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+    <a href="https://wa.me/2347082334741" target="_blank">WhatsApp</a>
+ 
+  </div>
+  <p style="color:var(--muted);font-size:.75rem;margin-top:1.5rem">© 2025 Bishy Power Hub. All rights reserved.</p>
+</footer>
+
+<!-- CART DRAWER -->
+<div class="cart-overlay" id="cartOverlay" onclick="handleCartOverlayClick(event)">
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="cart-header">
+      <h2>🛒 Your Cart</h2>
+      <button class="close-btn" onclick="closeCart()">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer" id="cartFooter">
+      <div class="cart-total">
+        <span>Total</span>
+        <strong id="cartTotal">₦0</strong>
+      </div>
+      <button class="btn-primary" style="width:100%" onclick="openCheckout()">Proceed to Checkout →</button>
+    </div>
+  </div>
+</div>
+
+<!-- CHECKOUT MODAL -->
+<div class="modal-overlay" id="checkoutModal">
+  <div class="modal">
+    <div class="modal-header">
+      <h2>📦 Checkout</h2>
+      <button class="close-btn" onclick="closeCheckout()">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="checkout-summary" id="checkoutSummary"></div>
+      <div class="form-group">
+        <label>Full Name *</label>
+        <input type="text" id="ckName" placeholder="Your full name">
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Phone *</label>
+          <input type="tel" id="ckPhone" placeholder="+234...">
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" id="ckEmail" placeholder="you@email.com">
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Delivery Address *</label>
+        <textarea id="ckAddress" rows="2" placeholder="Full delivery address"></textarea>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Delivery Option</label>
+          <select id="ckDelivery">
+            <option value="standard">Standard (3-5 days)</option>
+            <option value="express">Express (1-2 days)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Installation Required?</label>
+          <select id="ckInstall">
+            <option value="no">No</option>
+            <option value="yes">Yes — Schedule it</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Additional Notes</label>
+        <textarea id="ckNotes" rows="2" placeholder="Anything else we should know?"></textarea>
+      </div>
+      <button class="btn-primary" style="width:100%" onclick="placeOrder()" id="placeOrderBtn">
+        ✅ Place Order
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- SUCCESS MODAL -->
+<div class="modal-overlay" id="successModal">
+  <div class="modal" style="max-width:420px">
+    <div class="success-modal" id="successBody">
+      <div class="success-icon">🎉</div>
+      <h2>Order Placed!</h2>
+      <p style="color:var(--muted)">Thank you for your order. We'll contact you shortly to confirm.</p>
+      <div class="order-id-box" id="orderIdBox"></div>
+      <button class="btn-primary" style="margin-top:.5rem" onclick="closeSuccess()">Continue Shopping</button>
+    </div>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast-container" id="toastContainer"></div>
+
+<!-- FIREBASE -->
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+import { getFirestore, collection, getDocs, addDoc, serverTimestamp, query, where, orderBy } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+
+
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyArzqnv0EYfidYMLeTjh8_R2vK5gdezubo",
+    authDomain: "ludek-musical.firebaseapp.com",
+    projectId: "ludek-musical",
+    storageBucket: "ludek-musical.firebasestorage.app",
+    messagingSenderId: "719873964279",
+    appId: "1:719873964279:web:fb6550f75c7034afc6bbf2"
+  };
+
+ 
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+// 
+const demoProducts = [
+  {id:'p1',name:'Inverter Split AC 1.5HP',category:'electrical',price:185000,desc:'Energy-saving inverter technology, cooling + heating, WiFi control.',icon:'❄️',inStock:true,installable:true},
+  {id:'p2',name:'3KVA Pure Sine Wave Inverter',category:'solar',price:120000,desc:'High-efficiency pure sine wave output, battery protection, LCD display.',icon:'🔋',inStock:true,installable:true},
+  {id:'p3',name:'400W Monocrystalline Solar Panel',category:'solar',price:95000,desc:'High efficiency mono cells, tempered glass, weatherproof aluminium frame.',icon:'☀️',inStock:true,installable:true},
+  {id:'p4',name:'4MP HD IP Security Camera',category:'security',price:28500,desc:'4MP full HD, night vision 30m, IP67 weatherproof, PoE support.',icon:'📷',inStock:true,installable:true},
+  {id:'p5',name:'8-Channel NVR Kit + 4 Cameras',category:'security',price:145000,desc:'Complete CCTV kit, 8-channel NVR, H.265+ compression, 1TB HDD included.',icon:'🎥',inStock:true,installable:true},
+  {id:'p6',name:'6KVA Diesel Generator',category:'electrical',price:380000,desc:'Low noise, electric start, AVR protection, 12hr tank capacity.',icon:'⚡',inStock:true,installable:true},
+  {id:'p7',name:'200Ah Deep Cycle Battery',category:'solar',price:75000,desc:'Long life deep cycle, maintenance-free, 12V AGM technology.',icon:'🔋',inStock:false,installable:false},
+  {id:'p8',name:'50m Armoured DC Solar Cable',category:'accessories',price:8500,desc:'4mm² twin core, UV resistant, rated for outdoor solar installations.',icon:'🔌',inStock:true,installable:false},
+  {id:'p9',name:'MPPT Solar Charge Controller 40A',category:'accessories',price:18500,desc:'MPPT technology, 40A, dual USB, LCD display, protects battery.',icon:'🔧',inStock:true,installable:false},
+  {id:'p10',name:'Standing Fan 18"',category:'electrical',price:22000,desc:'3-speed settings, oscillating, timer, remote control included.',icon:'💨',inStock:true,installable:false},
+  {id:'p11',name:'Automatic Transfer Switch 63A',category:'accessories',price:15000,desc:'Automatic mains/generator switching, 63A capacity, DIN rail mount.',icon:'🔀',inStock:true,installable:true},
+  {id:'p12',name:'Video Door Bell Camera',category:'security',price:35000,desc:'1080p, two-way audio, motion detection, night vision, WiFi.',icon:'🔔',inStock:true,installable:true},
+];
+
+window._db = db;
+window._addDoc = addDoc;
+window._collection = collection;
+window._serverTimestamp = serverTimestamp;
+window._products = demoProducts;
+
+// Load products from Firestore (fallback to demo)
+async function loadProducts(){
+  try {
+    const snap = await getDocs(collection(db,'products'));
+    if(!snap.empty){
+      const prods = snap.docs.map(d=>({id:d.id,...d.data()}));
+      window._products = prods;
+    }
+  } catch(e){ console.log('Using demo products') }
+  renderProducts(window._products);
+}
+
+loadProducts();
+</script>
+
+<script>
+// ──────────────────────────────────────────────
+// STATE
+// ──────────────────────────────────────────────
+let cart = JSON.parse(localStorage.getItem('bph_cart')||'[]');
+let installRequests = {};
+let activeFilter = 'all';
+
+// ──────────────────────────────────────────────
+// NAV
+// ──────────────────────────────────────────────
+function toggleMenu(){
+  document.getElementById('navLinks').classList.toggle('open');
+}
+window.addEventListener('scroll',()=>{
+  document.getElementById('navbar').style.boxShadow =
+    window.scrollY>20?'0 4px 30px rgba(0,0,0,0.5)':'none';
+});
+
+// ──────────────────────────────────────────────
+// PRODUCTS
+// ──────────────────────────────────────────────
+function renderProducts(products){
+  const grid = document.getElementById('productsGrid');
+  if(!products||products.length===0){
+    grid.innerHTML = '<p style="color:var(--muted);grid-column:1/-1">No products found.</p>';
+    return;
+  }
+  grid.innerHTML = products.map(p=>`
+    <div class="product-card fade-in" data-cat="${p.category}" id="pc-${p.id}">
+      ${p.imageUrl
+        ? `<img class="product-img" src="${p.imageUrl}" alt="${p.name}" loading="lazy">`
+        : `<div class="product-img-placeholder">${p.icon||'📦'}</div>`}
+      <span class="product-badge ${p.inStock?'':'out-badge'}">${p.inStock?'In Stock':'Out of Stock'}</span>
+      <div class="product-body">
+        <div class="product-cat">${p.category}</div>
+        <div class="product-name">${p.name}</div>
+        <div class="product-desc">${p.desc||p.description||''}</div>
+        <div class="product-price">₦${Number(p.price).toLocaleString()}</div>
+        <div class="product-actions">
+          <button class="add-cart-btn" ${!p.inStock?'disabled':''} onclick="addToCart('${p.id}')">
+            ${p.inStock?'🛒 Add to Cart':'Unavailable'}
+          </button>
+          ${p.installable?`
+          <button class="install-toggle" id="it-${p.id}" onclick="toggleInstall('${p.id}',this)">
+            🔧 Install
+          </button>`:''}
+        </div>
+      </div>
+    </div>
+  `).join('');
+}
+
+function filterProducts(cat, btn){
+  activeFilter = cat;
+  document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  const prods = window._products||[];
+  renderProducts(cat==='all'?prods:prods.filter(p=>p.category===cat));
+  document.getElementById('productsGrid').scrollIntoView({behavior:'smooth',block:'nearest'});
+}
+
+function filterByCategory(cat, card){
+  document.querySelectorAll('.cat-card').forEach(c=>c.classList.remove('active'));
+  card.classList.add('active');
+  filterProducts(cat, document.querySelector(`.filter-btn[onclick*="${cat}"]`)||document.querySelectorAll('.filter-btn')[0]);
+  document.getElementById('products').scrollIntoView({behavior:'smooth'});
+}
+
+function toggleInstall(id, btn){
+  installRequests[id] = !installRequests[id];
+  btn.classList.toggle('active', installRequests[id]);
+  btn.textContent = installRequests[id]?'✅ Install':'🔧 Install';
+}
+
+// ──────────────────────────────────────────────
+// CART
+// ──────────────────────────────────────────────
+function getProductById(id){
+  return (window._products||[]).find(p=>p.id===id);
+}
+
+function addToCart(id){
+  const p = getProductById(id);
+  if(!p) return;
+  const existing = cart.find(c=>c.id===id);
+  if(existing) existing.qty++;
+  else cart.push({id,name:p.name,price:p.price,icon:p.icon||'📦',imageUrl:p.imageUrl||null,qty:1,install:!!installRequests[id]});
+  saveCart(); updateCartCount(); renderCartItems();
+  showToast('success',`${p.name} added to cart`);
+  openCart();
+}
+
+function removeFromCart(id){
+  cart = cart.filter(c=>c.id!==id);
+  saveCart(); updateCartCount(); renderCartItems();
+}
+
+function updateQty(id, delta){
+  const item = cart.find(c=>c.id===id);
+  if(!item) return;
+  item.qty = Math.max(1, item.qty+delta);
+  saveCart(); updateCartCount(); renderCartItems();
+}
+
+function saveCart(){
+  localStorage.setItem('bph_cart', JSON.stringify(cart));
+}
+
+function updateCartCount(){
+  const count = cart.reduce((a,c)=>a+c.qty,0);
+  document.getElementById('cartCount').textContent = count;
+}
+
+function cartTotal(){
+  return cart.reduce((a,c)=>a+(c.price*c.qty),0);
+}
+
+function renderCartItems(){
+  const el = document.getElementById('cartItems');
+  const footer = document.getElementById('cartFooter');
+  if(cart.length===0){
+    el.innerHTML = `<div class="empty-cart"><span>🛒</span>Your cart is empty</div>`;
+    footer.style.display='none';
+    return;
+  }
+  footer.style.display='block';
+  el.innerHTML = cart.map(item=>`
+    <div class="cart-item">
+      <div class="cart-item-img">${item.imageUrl?`<img src="${item.imageUrl}" style="width:100%;height:100%;object-fit:cover;border-radius:6px">`:(item.icon||'📦')}</div>
+      <div class="cart-item-info">
+        <div class="cart-item-name">${item.name}</div>
+        <div class="cart-item-price">₦${Number(item.price).toLocaleString()}</div>
+        ${item.install?'<div class="cart-item-install">🔧 Installation included</div>':''}
+        <div class="qty-controls">
+          <button class="qty-btn" onclick="updateQty('${item.id}',-1)">−</button>
+          <span class="qty-num">${item.qty}</span>
+          <button class="qty-btn" onclick="updateQty('${item.id}',1)">+</button>
+        </div>
+      </div>
+      <button class="remove-item" onclick="removeFromCart('${item.id}')">✕ Remove</button>
+    </div>
+  `).join('');
+  document.getElementById('cartTotal').textContent = `₦${cartTotal().toLocaleString()}`;
+}
+
+function openCart(){
+  document.getElementById('cartOverlay').classList.add('open');
+  renderCartItems();
+}
+function closeCart(){document.getElementById('cartOverlay').classList.remove('open')}
+function handleCartOverlayClick(e){
+  if(e.target===document.getElementById('cartOverlay')) closeCart();
+}
+
+// ──────────────────────────────────────────────
+// CHECKOUT
+// ──────────────────────────────────────────────
+function openCheckout(){
+  if(cart.length===0){showToast('error','Cart is empty');return}
+  closeCart();
+  buildCheckoutSummary();
+  document.getElementById('checkoutModal').classList.add('open');
+}
+function closeCheckout(){document.getElementById('checkoutModal').classList.remove('open')}
+
+function buildCheckoutSummary(){
+  const el = document.getElementById('checkoutSummary');
+  const items = cart.map(c=>`<div class="summary-item"><span>${c.name} ×${c.qty}</span><span>₦${(c.price*c.qty).toLocaleString()}</span></div>`).join('');
+  const hasInstall = cart.some(c=>c.install);
+  el.innerHTML = `
+    <h4>Order Summary</h4>
+    ${items}
+    ${hasInstall?'<div class="summary-item"><span>🔧 Installation</span><span>On-site quote</span></div>':''}
+    <div class="summary-total"><span>Total</span><span>₦${cartTotal().toLocaleString()}</span></div>
+  `;
+}
+
+async function placeOrder(){
+  const name=document.getElementById('ckName').value.trim();
+  const phone=document.getElementById('ckPhone').value.trim();
+  const addr=document.getElementById('ckAddress').value.trim();
+  if(!name||!phone||!addr){showToast('error','Please fill in all required fields');return}
+
+  const btn=document.getElementById('placeOrderBtn');
+  btn.textContent='Placing order...';btn.disabled=true;
+
+  const orderId = 'BPH-'+Date.now().toString(36).toUpperCase();
+  const order = {
+    orderId,
+    customer:{name,phone,email:document.getElementById('ckEmail').value,address:addr},
+    items:cart,
+    total:cartTotal(),
+    delivery:document.getElementById('ckDelivery').value,
+    installation:document.getElementById('ckInstall').value==='yes',
+    notes:document.getElementById('ckNotes').value,
+    status:'Pending',
+    createdAt:new Date().toISOString()
+  };
+
+  try {
+    if(window._db&&window._addDoc&&window._collection){
+      await window._addDoc(window._collection(window._db,'orders'),{...order,createdAt:window._serverTimestamp()});
+    }
+  } catch(e){ console.log('Order saved locally only:', e) }
+
+  btn.textContent='✅ Place Order';btn.disabled=false;
+  closeCheckout();
+  document.getElementById('orderIdBox').innerHTML = `Order ID: <strong>${orderId}</strong>`;
+  document.getElementById('successModal').classList.add('open');
+  cart=[];saveCart();updateCartCount();
+}
+
+function closeSuccess(){
+  document.getElementById('successModal').classList.remove('open');
+  // Clear form
+  ['ckName','ckPhone','ckEmail','ckAddress','ckNotes'].forEach(id=>{
+    const el=document.getElementById(id);if(el)el.value='';
+  });
+}
+
+// ──────────────────────────────────────────────
+// BOOKING FORM
+// ──────────────────────────────────────────────
+async function submitBooking(){
+  const name=document.getElementById('bookName').value.trim();
+  const phone=document.getElementById('bookPhone').value.trim();
+  const service=document.getElementById('bookService').value;
+  const addr=document.getElementById('bookAddr').value.trim();
+  if(!name||!phone||!service){showToast('error','Please fill in required fields');return}
+
+  try {
+    if(window._db&&window._addDoc&&window._collection){
+      await window._addDoc(window._collection(window._db,'bookings'),{
+        name,phone,service,address:addr,
+        status:'Pending',createdAt:window._serverTimestamp?window._serverTimestamp():new Date().toISOString()
+      });
+    }
+  } catch(e){}
+
+  showToast('success','Booking submitted! We\'ll contact you soon.');
+  ['bookName','bookPhone','bookAddr'].forEach(id=>document.getElementById(id).value='');
+  document.getElementById('bookService').selectedIndex=0;
+}
+
+// ──────────────────────────────────────────────
+// TOAST
+// ──────────────────────────────────────────────
+function showToast(type, msg){
+  const c=document.getElementById('toastContainer');
+  const t=document.createElement('div');
+  t.className=`toast ${type}`;
+  t.textContent=(type==='success'?'✓ ':type==='error'?'✕ ':'')+msg;
+  c.appendChild(t);
+  setTimeout(()=>t.remove(),3000);
+}
+
+// ──────────────────────────────────────────────
+// INIT
+// ──────────────────────────────────────────────
+updateCartCount();
+</script>
+</body>
+</html>
